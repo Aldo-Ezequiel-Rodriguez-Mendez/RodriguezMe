@@ -1,6 +1,9 @@
 p, h1 {
-    font-family:  'Century Gothic', 'Times New Roman', serif;
+    font-family: "Courier New", Courier, monospace;
     color : white;
+}
+*{
+	font-family: "Courier New", Courier, monospace;
 }
 
 body{
@@ -21,9 +24,11 @@ table{
 }
 
 th, td{
-	padding: 20px;
+	padding: 20px;	
 }
-
+tbody>tr>td{
+	text-align: justify;
+}
 thead{
 	background-color: #246355;
 	border-bottom: solid 5px #0F362D;
@@ -38,4 +43,9 @@ tr:nth-child(even){
 tr:hover td{
 	background-color: #369681;
 	color: white;
+}
+
+img {
+	width:180px;
+	height:150px;
 }

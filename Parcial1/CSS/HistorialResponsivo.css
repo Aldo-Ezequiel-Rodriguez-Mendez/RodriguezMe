@@ -1,0 +1,51 @@
+@media only screen and (max-width: 900px) 
+    {
+		table, thead, tbody, th, td, tr {
+			display: block;
+		}
+
+		p, h1 {
+			font-family: "Courier New", Courier, monospace;
+			color : white;
+		}
+
+        tr { border-bottom: solid 5px #0F362D; }
+
+		thead tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+
+		td {
+			position: relative;      
+			padding-left: 50%;       
+			border: none;
+			border-bottom: 1px solid #eee;
+			font-size: 20px;
+			text-align: justify;
+			font-family: "Courier New", Courier, monospace;
+		}
+
+		td:before {
+			position: absolute;
+			top: 6px;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		img {
+			width:100%;
+			height:40%;
+		}		
+
+		td:nth-of-type(1):before { content: "Nombre:"; }
+		td:nth-of-type(2):before { content: "Consola:"; }
+		td:nth-of-type(3):before { content: "Género:"; }
+		td:nth-of-type(4):before { content: "Fecha de lanzamiento:"; }
+		td:nth-of-type(5):before { content: "Imagen:"; }
+		td:nth-of-type(6):before { content: "Comentarios:"; }
+	}
