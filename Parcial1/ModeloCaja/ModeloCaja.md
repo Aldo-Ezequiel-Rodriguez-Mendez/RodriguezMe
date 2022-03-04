@@ -25,4 +25,4 @@ Si una caja tiene una visualización externa de tipo **inline**, entonces:
 
 Sin embargo, las cajas también tienen un tipo de visualización interna, que determina cómo se disponen los elementos dentro de esa caja. De forma predeterminada, los elementos dentro de una caja se presentan en flujo normal, lo que significa que se comportan como otros elementos de tipo en bloque o en línea (como se explicó anteriormente).
 
-![Image text](Imagenes/../../Parcial1/Imagenes/Modelo%20Caja.jpg)
+![Image text](Modelo%20Caja.jpg)
