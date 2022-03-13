@@ -11,4 +11,4 @@
 
  *Repositorio para llevar control sobre trabajos y proyectos de la materia...*
 
- ![Image text](Parcial1/Imagenes/Programando.gif)
+ ![Image text](Parcial1/HistorialResponsivo/Programando.gif)
