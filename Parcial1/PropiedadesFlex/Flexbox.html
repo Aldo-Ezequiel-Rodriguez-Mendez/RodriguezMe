@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0d1a359279.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Flexbox.css">
+    <script src="Flexbox.js" defer></script>
+</head>
+<body>
+    <nav class="menu"> <!--Este es el menu-->
+        <label class="logo">Flexbox</label>
+        <ul class="menu_items">
+           <li><a id="opcIntroduccion" href="#opcionIntroduccion">Introducción</a></li> 
+           <li><a id="opcFlex-container" href="#opcionFlex-container">Flex-container</a></li> 
+           <li><a id="opcFlex-items" href="#opcionFlex-items">Flex-items</a></li> 
+        </ul>
+        <span class="btn_menu">
+            <i class="fa fa-bars"></i> <!--Esto es el icono para desplegar el menu-->
+        </span>
+    </nav>
+
+    <div class="content"> <!--Este es el contenido-->
+
+        <div id="opcionIntroduccion" class="contenidoOpcion">
+            <div class="QueEsFlexbox">
+                <h3>¿Qué es Flexbox?</h3>
+                <p><br>
+                    Tradicionalmente, en CSS se ha utilizado el posicionamiento (static, relative, absolute...), 
+                    los elementos en línea o en bloque (y derivados) o los float, lo que a grandes rasgos no dejaba de ser un sistema de creación de diseños bastante 
+                    tradicional que no encaja con los retos que tenemos hoy en día: sistemas de escritorio, dispositivos móviles, múltiples resoluciones, etc... 
+       
+                    Flexbox es un sistema de elementos flexibles que llega con la idea de olvidar estos mecanismos y acostumbrarnos a una mecánica más potente, 
+                    limpia y personalizable, en la que los elementos HTML se adaptan y colocan automáticamente y es más fácil personalizar los diseños. 
+                    Está especialmente diseñado para crear, mediante CSS, estructuras de una sóla dimensión.
+                </p><br>
+            </div>
+           <div class="conceptos">
+            <h3>Conceptos</h3>
+            <p><br>
+                Para empezar a utilizar flexbox lo primero que debemos hacer es conocer algunos de los elementos 
+                básicos de este nuevo esquema, que son los siguientes:
+            </p></br>  
+            <img src="Imagenes/FlexboxConceptos.png" width="600px" height="200px" alt="Error al cargar imagen..."><br>
+            <p><b>Contenedor:</b> es el elemento padre que tendrá en su interior cada uno de los ítems flexibles.
+                          Observa que al contrario que muchas otras estructuras CSS, por norma general, en Flex establecemos 
+                          las propiedades al elemento padre.
+            </p><br>
+            <p>
+                <b>Eje principal:</b> Los contenedores flexibles tendrán una orientación principal específica. Por defecto, es en horizontal (en fila).
+            </p><br>
+            <p>
+                <b> Eje secundario:</b> De la misma forma, los contenedores flexibles tendrán una orientación secundaria, perpendicular a la principal. 
+                Si la principal es en horizontal, la secundaria será en vertical, y viceversa.
+            </p><br>
+            <p>
+                <b>Ítem:</b> Cada uno de los hijos flexibles que tendrá el contenedor en su interior.
+            </p><br>
+           </div>           
+        </div>
+
+        <div id="opcionFlex-container" class="contenidoOpcion">
+            <TABLE BORDER CELLPADDING=10 CELLSPACING=0>
+                <thead>
+                    <TR>
+                        <th>Propiedad</th> <th>Descripción</th> <th>Valores</th>
+                    </TR>
+                </thead>
+                
+                <tbody>
+                    <TR>
+                        <TD>flex-direction</TD> 
+                        <TD>Especifica la dirección de los elementos flexibles dentro de un contenedor flexible</TD> 
+                        <TD>column, column-reverse, row, row-reverse</TD>
+                    </TR>
+                       
+                    <TR>
+                        <TD>flex-wrap</TD>
+                        <TD>Especifica si los elementos flexibles deben ser wrap o no, si no hay suficiente espacio para ellos en una línea flexible</TD> 
+                        <TD>wrap,nowrap,wrap-reverse </TD> 
+                    </TR>
+
+                    <TR>
+                        <TD>flex-flow</TD>
+                        <TD>La propiedad flex-flow es una propiedad atajo para las propiedades individuales flex-direction y flex-wrap.</TD>
+                        <TD>flex-flow, flex-direction, flex-wrap</TD> 
+                    </TR>
+
+                    <TR>
+                        <TD>justify-content</TD> 
+                        <TD>La propiedad CSS justify-content define cómo el navegador distribuye el espacio entre y alrededor de los items flex, a lo largo del eje principal de su contenedor</TD>
+                        <TD>center, flex-start, flex-end, space-around, space-around </TD>
+
+                    <TR>
+                        <TD>align-items</TD> 
+                        <TD>Alinea verticalmente los elementos flexibles cuando los elementos no utilizan todo el espacio disponible en el eje transversal</TD> 
+                        <TD>center, flex-start, flex-end, stretch, baseline</TD> 
+                    </TR>
+
+                    <TR>
+                        <TD>align-content</TD>
+                        <TD>Modifica el comportamiento de la propiedad flex-wrap. Es similar a alinear elementos, pero en lugar de alinear elementos flexibles, alinea líneas flexibles</TD>
+                        <TD>space-between, space-around, stretch, center, flex-start </TD>
+                    </TR>
+                </tbody>              
+            </TABLE>
+        </div>
+        <div id="opcionFlex-items" class="contenidoOpcion">
+            <TABLE BORDER CELLPADDING=10 CELLSPACING=0>
+                <thead>
+                    <TR>
+                        <th>Propiedad</th> <th>Descripción</th> <th>Valores</th>
+                    </TR>
+                </thead>
+                
+                <tbody>
+                    <TR>
+                        <TD>align-self</TD> 
+                        <TD>Especifica la alineación de un elemento flexible (anula la propiedad de elementos de alineación del contenedor flexible)</TD> 
+                        <TD> flex-start, flex-end, center, stretch, baseline</TD>
+                    </TR>
+                       
+                    <TR>
+                        <TD>flex</TD>
+                        <TD>Una propiedad abreviada para las propiedades flex-grow, flex-shrink y flex-basis</TD> 
+                        <TD>flex-grow, flex-shrink, flex-basis</TD> 
+                    </TR>
+
+                    <TR>
+                        <TD>flex-basis</TD>
+                        <TD>Especifica la longitud inicial de un elemento flexible</TD>
+                        <TD>El valor debe ser una cantidad ya sea en px, vw, %, etc</TD> 
+                    </TR>
+
+                    <TR>
+                        <TD>flex-grow</TD> 
+                        <TD>Especifica cuánto crecerá un elemento flexible en relación con el resto de elementos flexibles dentro del mismo contenedor</TD>
+                        <TD>El valor debe ser un número, el valor predeterminado es 0 </TD>
+
+                    <TR>
+                        <TD>flex-shrink</TD> 
+                        <TD>Especifica cuánto se encogerá un elemento flexible en relación con el resto de elementos flexibles dentro del mismo contenedor</TD> 
+                        <TD>El valor debe ser un número, el valor predeterminado es 1</TD> 
+                    </TR>
+
+                    <TR>
+                        <TD>order</TD>
+                        <TD>Especifica el orden de los elementos flexibles dentro del mismo contenedor</TD>
+                        <TD>El valor del elemento debe ser un número, el valor predeterminado es 0</TD>
+                    </TR>
+                </tbody>              
+            </TABLE>
+        </div>
+        
+    </div> 
+
+</body>
+</html>
