@@ -73,6 +73,7 @@ table{
 	text-align: left;
 	border-collapse: collapse;
 	width: 100%;  
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, .5);
 }
 
 th, td{
