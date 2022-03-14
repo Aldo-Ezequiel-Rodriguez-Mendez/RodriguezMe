@@ -110,13 +110,15 @@ div.content {
   }
 div.QueEsFlexbox{
     background-color: rgb(209, 186, 150);
-    margin: 5px;
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, .5);
+    margin-bottom: 30px;
     padding: 10px;
 }
 .conceptos{
     padding: 10px;
     background-color: rgb(205, 224, 231);
-    margin: 5px;	
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, .5);
+    margin-bottom: 30px;
 }
 .contenidoOpcion { display: none; }
   
