@@ -1,0 +1,180 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .contenedor {
+    width: 100vw;
+    height: 100vh;
+    display: flex;  /*AQUI SE AÑADE FLEX*/
+    flex-direction: row; /*PROPIEDAD ROW PARA ACOMODAR EL MENU AL LADO IZQUIERDO DEL CONTENIDO*/
+  }
+  #Titulo{
+    font-size: 30;
+    font-style: italic;
+    font-weight: bold;
+    padding: 30px;
+    text-align:center;
+    color: white;
+    background-color: rgb(77, 70, 71);
+  }
+ .content{
+      text-align: center;
+      display: flex;
+      flex-direction: column;    
+  }
+  body>.content{
+    padding: 20px;
+  }
+  .content>.contenidoOpcion{
+    width: 100%;
+    height: 85%;
+    background-color: rgb(207, 207, 207);
+    margin: auto;	
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, .5);
+    padding: 20px;
+  }
+  .content>#Titulo{
+    width: 100%;
+    background-color: #246355;
+    margin: auto;	
+  }
+  .contenidoOpcion>p{
+    text-align:justify;
+  }
+  div.sidebar {
+    float:left;
+    background-color:rgba(0, 0, 0, 0.151) ;
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+    font-size: 30;
+  }
+
+  #opcMenu{
+      text-align:center;
+      background-color:#246355;
+      font-size: 20px;
+      color: white;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    padding: 30px;
+    color: black;
+  }
+  img{
+    width: 300px;
+    height: 300px;
+  }
+  .sidebar>a:hover {
+    background-color: rgba(51, 51, 51, 0.274);  
+    border-left: 5px solid transparent;
+		transition: all 400ms ease;
+    border-color: #777474;
+    color: black;
+  }
+  
+  div.content {
+    float:left;
+    width:calc(100% - 200px);
+    background-color: #632432;
+    padding: 16px;
+    height: 100%;
+  }
+ 
+  .contenidoOpcion { display: none; }
+  
+  #opcionC:target,
+  #opcionJava:target,
+  #opcionC2:target,
+  #opcionMySQL:target,
+  #opcionSQLServer:target,
+  #opcionPostgreSQL:target { display: block;}
+  
+  @media screen and (max-width: 900px) {
+    div.sidebar {
+      float:none;
+      width: 100%;
+      height: 10%;
+    }
+    .sidebar a {float: left;}
+    
+    div.content {margin-left: 0;
+     width:100%;}
+     a {
+        padding: 30px;
+        color: white;
+        padding-bottom: 5px;
+        color: black;
+        display: flex;
+        flex-direction: row;
+      }
+
+      img{
+        width: 200px;
+        height: 200px;
+      }
+
+      .sidebar>a:hover {
+        border-bottom: 5px solid transparent;
+        border-left: 0px solid transparent;           
+        border-color: #777474;
+        color: black;
+      }
+      .content>#Titulo{
+        width: 90%;
+      }
+      .content>.contenidoOpcion{
+        width: 90%;
+        height: 85%;
+      }
+      .contenedor{
+        flex-direction: column; /*PROPIEDAD COLUMN PARA APILAR EL MENU ENCIMA DEL CONTENIDO*/
+    }
+  }
+    
+  @media screen and (max-width: 600px) {
+    .sidebar a {
+      text-align: center;
+      width: 100%;
+    }
+    a {
+        text-align: center;
+        padding: 10px;
+        padding-bottom: 5px;
+        color: black;
+      }
+
+      .sidebar>a:hover {
+        border-bottom: 0px solid transparent;
+        border: 1px solid transparent;
+        border-color: #777474;
+        color: black;
+      }
+
+      .content>#Titulo{
+        width: 100%;
+      }
+      .content>.contenidoOpcion{
+        width: 100%;
+        height: 100%;
+      }
+
+      img{
+        width: 100px;
+        height: 100px;
+      }
+
+      div.sidebar {
+        float:none;
+        text-align: center;
+        width: 100%;
+        height: 500px;
+        flex-direction: column; /*PROPIEDAD COLUMN PARA APILAR LAS OPCIONES DEL MENU UNA ENCIMA DE OTRA*/
+      }
+      .contenedor{
+        flex-direction: column; /*PROPIEDAD COLUMN PARA APILAR EL MENU ENCIMA DEL CONTENIDO*/
+    }
+  }
