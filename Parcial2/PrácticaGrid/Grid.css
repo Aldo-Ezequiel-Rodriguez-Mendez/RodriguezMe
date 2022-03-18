@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+
+    
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+
+    justify-content: center;
+    /*align-content: center;*/
+    transition: 1s;
+
+   /* justify-items:center;
+    align-items: center;*/
+}
+
+.caja{
+    background-color: #246355;
+    color: white;
+}
+
+#caja1{
+    background-color: #312f2f;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#caja2{
+    background-color: #750b0b;
+    margin: 10px;
+}
+#caja3{
+    background-color: #28a04c;
+    margin: 10px;
+}
+#caja4{
+    background-color: #203681;
+    margin: 10px;
+
+}
+#caja5{
+    background-color: #a3b845;
+    margin: 10px;
+}
+
+#caja6{
+    background-color: #312f2f;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
