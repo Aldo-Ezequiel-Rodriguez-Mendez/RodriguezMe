@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="EventoGrid.css">
+</head>
+<body>
+    <div id="idcontene" class="contenedor">
+        <div id="caja1" class="caja">caja 1</div>
+        <div id="caja2" class="caja">caja 2</div>
+        <div id="caja3" class="caja">caja 3</div>
+        <div id="caja4" class="caja">caja 4</div>
+        <div id="caja5" class="caja">caja 5</div>
+        <div id="caja6" class="caja">caja 6</div>
+    </div>
+
+    <script>
+        window.onload = function(){
+            document.getElementById("idcontene").addEventListener("click",function(evento){
+            /*console.log("Click en el contenedor");*/
+            document.getElementById(evento.target.id).classList.toggle("cajaSeleccionada");
+
+
+            });
+        }
+       
+    </script>
+</body>
+</html>
