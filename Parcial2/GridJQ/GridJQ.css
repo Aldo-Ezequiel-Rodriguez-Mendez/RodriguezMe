@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+
+    
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+
+    justify-content: center;
+    transition: 1s;
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.contenedor {
+    width:100vw;
+    height:100vh;
+    background-color: white;
+    color: white;
+    display:grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    justify-content:center;
+    align-content: center;
+
+}
+
+.caja {
+    width: 150px;
+    height: 150px;
+    background-color:rgb(45, 71, 71);
+    text-align:center;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+.cajaSeleccionada{
+    background-color: rgb(64, 64, 155);
+}
