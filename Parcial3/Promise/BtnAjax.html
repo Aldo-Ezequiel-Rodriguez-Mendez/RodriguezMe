@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Bootstrap</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="BtnAjax.css">
+      <script src="BtnAjax.js"></script>
+</head>
+<body>
+      <nav class="menu"> 
+            <label class="logo">Formulario Boostrap componentes</label>
+        </nav>
+      <div class="bordeMenu"></div>
+
+<div class="content">
+    <div class="container">
+    <form class="form">
+      <div id="rowenc" class="row">
+            <div class="col-sm-12">
+            <h3 id="enca">Sistema de control de inventario de una tienda de camisetas</h3>
+            </div>
+      </div>
+
+      <div class="row">
+          <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                <label for="idPrenda" class="control-label">ID Prenda:</label>
+                <input id="idPrenda" type="text" class="form-control" placeholder="Ingrese un ID"/>
+          </div>
+          <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                <label for="nomProveedor">Proveedor:</label>
+                <input id="nomProveedor" type="text" class="form-control" placeholder="Proveedor"/>
+          </div>
+          <div class="form-group col-sm-12 col-md-12 col-lg-4">
+                <label for="marca">Marca:</label>
+                <input id="marca" type="text" class="form-control" name="marca" placeholder="Nombre de la marca"/>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                <label for="talla">Talla:</label>
+                <input id="talla" type="text" class="form-control" placeholder="Grande/Mediana/Chica"/>
+          </div>
+          <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                <label for="material">Material de fabricación:</label>
+                <input id="material" type="text" class="form-control" placeholder="Algodon/Sintetica/Licra"/>
+          </div>
+      </div>
+      <div class="row">
+            <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                  <label for="stock">Stock</label>
+                  <input id="stock" type="text" class="form-control" placeholder="Cantidad en stock"/>
+            </div>
+            <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                  <label for="Descripcion">Descripcion</label>
+                  <input id="Descripcion" type="text" class="form-control" placeholder="Descripcion breve del producto"/>
+            </div>
+            <div class="form-group col-sm-12 col-md-12 col-lg-4">
+                  <label for="Precio">Precio</label>
+                  <input id="Precio" type="text" class="form-control" placeholder="$ Precio"/>
+            </div>
+      </div>
+
+      <button id="btn1" type="button" class="btn btn-primary" title="Alerta" title="Alerta">Alerta</button>
+      <button id="btn2" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1" title="Modal">Modal</button>
+      <button id="btnjson" type="button" class="btn btn-primary" title="Obtiene Json">Json</button>
+      <button id="btnCambiar" type="button" class="btn btn-primary" title="Cambiar header">Cambiar header</button>
+    </form>
+
+
+    <div id="alerta1" class="alert alert-primary alert-dismissible collapse" role="alert">
+      <h1>CANCELADO</h1>
+      <p>Se ha cancelado la acción!</p>
+      <button id="btncloseAlert" type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+    </div>
+
+    <div id="modal1" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+      <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Esto es un modal</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+      </div>
+      <div class="modal-body">
+                <p>Hola, aqui va el cuerpo del modal</p>
+      </div>
+      <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+      </div>
+    </div>
+</div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+<html>
