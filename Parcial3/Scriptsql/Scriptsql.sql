@@ -1,9 +1,9 @@
-create database 19100243;
-use 19100243;
+create database `19100243`;
+use `19100243`;
 
 create table camiseta
 (
-    idCamiseta smallint not null auto_increment,
+    idCamiseta smallint auto_increment,
     nomProveedor varchar(30),
     nomMarca varchar(30),
     talla varchar(20),
@@ -11,6 +11,7 @@ create table camiseta
     stock int (10),
     descripcion varchar(50),
     precio decimal (10),
+    primary key (idCamiseta)
 );
 
 insert into camiseta (nomProveedor,nomMarca,talla,material,stock,descripcion,precio)
