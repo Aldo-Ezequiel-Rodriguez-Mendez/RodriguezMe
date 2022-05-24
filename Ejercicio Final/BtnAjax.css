@@ -1,0 +1,52 @@
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+h3{
+    padding: 30px;
+}
+body{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    background-color:#fff;
+    text-align: center;
+}
+.bordeMenu{
+    background-image: url("Imagenes/Borde1.jpg");
+    background-size: 25%;
+    width: 100%;
+    height: 15px;
+}
+
+.menu{
+    background-color: #295364fb;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color:#fff;
+    font-size: 30px;
+    padding: 0 80px;
+    font-weight: bold;
+}
+.btn_menu {
+    margin-right: 30px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+div.content {
+    margin: 10px 10px 10px 10px;
+    width: 99%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 30px;
+    border: rgb(176, 213, 230) 3px solid;
+    padding: 5px;
+    height: calc(100% - 75px);
+  }
