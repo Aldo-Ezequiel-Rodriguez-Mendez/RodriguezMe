@@ -13,7 +13,7 @@
       });
 
       $('#btnjson').click(function() {
-          $.post('getregistro.php',{},function(data){
+          $.post('php/getRegistro.php',{},function(data){
 
                 console.log(data);
                 $('#idPrenda').val(data.idPrenda);
@@ -39,15 +39,27 @@
               },'json');
         });
 
+        $('#btnEliminaBD').click(function() {
+            let parid=prompt("Teclee el ID a eliminar");
+
+            $.post('php/delRegistroDB.php',{par1:parid},function(data){
+              },'json');
+        });
+
+        
+      
+        //Funcion para cargar los datos en el input
         function refrescar(objeto) {
             console.log(objeto);
-            $('#idCamiseta').val(objeto.idPrenda);
+
+            /*#NombreDelInput / objeto.NombreDeLaColumna*/
+            $('#idPrenda').val(objeto.idCamiseta);
             $('#nomProveedor').val(objeto.nomProveedor);
-            $('#nomMarca').val(objeto.marca);
+            $('#marca').val(objeto.nomMarca);
             $('#talla').val(objeto.talla);
             $('#material').val(objeto.material);
             $('#stock').val(objeto.stock);
-            $('#descripcion').val(objeto.Descripcion);
-            $('#precio').val(objeto.Precio);
+            $('#Descripcion').val(objeto.descripcion);
+            $('#Precio').val(objeto.precio);
       }
 });
