@@ -31,46 +31,42 @@
       <div class="row">
           <div class="form-group col-sm-12 col-md-6 col-lg-4">
                 <label for="idPrenda" class="control-label">ID Prenda:</label>
-                <input id="idPrenda" type="text" class="form-control"  readonly placeholder="Ingrese un ID"/>
+                <input name="idPrenda" id="idPrenda" type="text" class="form-control"  readonly placeholder="Ingrese un ID"/>
           </div>
           <div class="form-group col-sm-12 col-md-6 col-lg-4">
                 <label for="nomProveedor">Proveedor:</label>
-                <input id="nomProveedor" type="text" class="form-control" placeholder="Proveedor"/>
+                <input name="nomProveedor" id="nomProveedor" type="text" class="form-control" placeholder="Proveedor"/>
           </div>
           <div class="form-group col-sm-12 col-md-12 col-lg-4">
                 <label for="marca">Marca:</label>
-                <input id="marca" type="text" class="form-control" name="marca" placeholder="Nombre de la marca"/>
+                <input name="marca" id="marca" type="text" class="form-control" name="marca" placeholder="Nombre de la marca"/>
           </div>
       </div>
 
       <div class="row">
           <div class="form-group col-sm-12 col-md-6 col-lg-6">
                 <label for="talla">Talla:</label>
-                <input id="talla" type="text" class="form-control" placeholder="Grande/Mediana/Chica"/>
+                <input name="talla" id="talla" type="text" class="form-control" placeholder="Grande/Mediana/Chica"/>
           </div>
           <div class="form-group col-sm-12 col-md-6 col-lg-6">
                 <label for="material">Material de fabricación:</label>
-                <input id="material" type="text" class="form-control" placeholder="Algodon/Sintetica/Licra"/>
+                <input name="material" id="material" type="text" class="form-control" placeholder="Algodon/Sintetica/Licra"/>
           </div>
       </div>
       <div class="row">
             <div class="form-group col-sm-12 col-md-6 col-lg-4">
                   <label for="stock">Stock</label>
-                  <input id="stock" type="text" class="form-control" placeholder="Cantidad en stock"/>
+                  <input  name="stock"id="stock" type="text" class="form-control" placeholder="Cantidad en stock"/>
             </div>
             <div class="form-group col-sm-12 col-md-6 col-lg-4">
                   <label for="Descripcion">Descripcion</label>
-                  <input id="Descripcion" type="text" class="form-control" placeholder="Descripcion breve del producto"/>
+                  <input  name="Descripcion" id="Descripcion" type="text" class="form-control" placeholder="Descripcion breve del producto"/>
             </div>
             <div class="form-group col-sm-12 col-md-12 col-lg-4">
                   <label for="Precio">Precio</label>
-                  <input id="Precio" type="text" class="form-control" placeholder="$ Precio"/>
+                  <input  name="Precio" id="Precio" type="text" class="form-control" placeholder="$ Precio"/>
             </div>
       </div>
-
-      <button id="btn1" type="button" class="btn btn-primary" title="Alerta" title="Alerta">Alerta</button>
-      <button id="btn2" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1" title="Modal">Modal</button>
-      <button id="btnjson" type="button" class="btn btn-primary" title="Obtiene Json">Json</button>
 
       <button id="btnAgregarBD"        type="button" class="btn btn-success"   title="Agrega registro a la BD">Agregar BD</button>
       <button id="btnConsultaBD"       type="button" class="btn btn-warning"   title="Obtiene registro de la BD">Consulta BD</button>
@@ -78,34 +74,6 @@
       
     </form>
 
-
-    <div id="alerta1" class="alert alert-primary alert-dismissible collapse" role="alert">
-      <h1>CANCELADO</h1>
-      <p>Se ha cancelado la acción!</p>
-      <button id="btncloseAlert" type="button" class="close" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-    </div>
-
-    <div id="modal1" class="modal" tabindex="-1">
-      <div class="modal-dialog">
-      <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Esto es un modal</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-      </div>
-      <div class="modal-body">
-                <p>Hola, aqui va el cuerpo del modal</p>
-      </div>
-      <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary">Guardar Cambios</button>
-      </div>
-      </div>
-    </div>
-</div>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 <html>

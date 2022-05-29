@@ -9,11 +9,9 @@ try {
     $consulta->closeCursor();
     
     } catch(PDOException $e) {
-        echo "Error de consulta a la base de datos";
+        echo "No se encontró ningun elemento con el ID a eliminar";
         echo $e->getMessage();
     }
     
     echo json_encode($resultado)
-
-
 ?>
