@@ -8,9 +8,9 @@ $material=$_POST['par5'];
 $stock=$_POST['par6'];
 $Descripcion=$_POST['par7'];
 $Precio=$_POST['par8'];
+
 try {
-$consultaSql= "insert into camiseta(nomProveedor, nomMarca, talla, material, stock, descripcion, precio) values 
-                                   ('$nomProveedor', '$marca', '$talla', '$material', '$stock', '$Descripcion','$Precio')";
+$consultaSql= "update camiseta set nomProveedor='$nomProveedor',nomMarca='$marca',talla='$talla',material='$material',stock='$stock',descripcion='$Descripcion',precio='$Precio' where idCamiseta=$idCamiseta";
 $consulta = $con -> prepare($consultaSql);
 $consulta -> execute();
 $consulta->closeCursor();
