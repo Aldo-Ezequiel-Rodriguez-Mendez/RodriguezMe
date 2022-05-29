@@ -52,17 +52,19 @@
                   let Descripcion = document.getElementById("Descripcion").value; 
                   let Precio = document.getElementById("Precio").value; 
 
-
-                //Primero se busca si el registro existe en la base de datos
-                $.post('php/addRegistroBD.php',{par1:idPrenda,par2:nomProveedor,par3:marca,par4:talla,par5:material,par6:stock,par7:Descripcion,par8:Precio},
-                function(data){  
-                },'json');
-                swal("Acción completada", "Se ha agregado correctamente", "success");   
+                  if(nomProveedor.value == null || marca.value == null || talla.value == null || material.value == null || stock.value == null || Descripcion.value == null || Precio.value == null)
+                  {
+                        swal("Error", "Favor de no dejar los campos vacíos", "error");
+                  }
+                  else{
+                        $.post('php/addRegistroBD.php',{par1:idPrenda,par2:nomProveedor,par3:marca,par4:talla,par5:material,par6:stock,par7:Descripcion,par8:Precio},
+                        function(data){  
+                        },'json');
+                        swal("Acción completada", "Se ha agregado correctamente", "success");  
+                  } 
             } catch (exception) {
                 swal("Error", "Ha ocurrido un error", "error");
-            }
-
-            
+            }        
       });
 
         //Funcion para cargar los datos los input
