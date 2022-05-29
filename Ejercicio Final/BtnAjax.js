@@ -54,10 +54,10 @@
 
 
                 //Primero se busca si el registro existe en la base de datos
-                $.post('php/addRegistroDB.php',{par1:idPrenda,par2:nomProveedor,par3:marca,par4:talla,par5:material,par6:stock,par7:Descripcion,par8:Precio},
-                function(data){
-                        swal("Error", "Se ha encontrado ningún elemento con el ID a eliminar", "error");     
+                $.post('php/addRegistroBD.php',{par1:idPrenda,par2:nomProveedor,par3:marca,par4:talla,par5:material,par6:stock,par7:Descripcion,par8:Precio},
+                function(data){  
                 },'json');
+                swal("Acción completada", "Se ha agregado correctamente", "success");   
             } catch (exception) {
                 swal("Error", "Ha ocurrido un error", "error");
             }
