@@ -18,10 +18,10 @@ $con = mysqli_connect(server, user, password, database);
 		<title> Fetch Data From Database </title> 
 	</head> 
 	<body> 
-    <div class="table-responsive">
+    <div class="table-responsive" id="table">
 	<table  class="table"> 
     <thead class="thead-dark">
-        <th scope="row">Id</th>
+        <th scope="row">ID</th>
         <th scope="col">Proveedor</th>
         <th scope="col">Marca</th>
         <th scope="col">Talla</th>
@@ -49,7 +49,6 @@ $con = mysqli_connect(server, user, password, database);
 	<?php 
                } 
           ?> 
-
 	</table>
     </div>
 	</body> 
