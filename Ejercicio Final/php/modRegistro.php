@@ -1,5 +1,5 @@
 <?php
-include("conexionDB.php");
+include("conexion.php");
 
 $nomProveedor=$_POST['par2'];
 $marca=$_POST['par3'];

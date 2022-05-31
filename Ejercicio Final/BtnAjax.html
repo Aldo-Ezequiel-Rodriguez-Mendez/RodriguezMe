@@ -71,9 +71,14 @@
       <button id="btnModificaBD"       type="button" class="btn btn-info"   title="Modifica registro de la BD">Modifica BD</button>
       <button id="btnConsultaBD"       type="button" class="btn btn-primary"   title="Obtiene registro de la BD">Consulta BD</button>
       <button id="btnEliminaBD"        type="button" class="btn btn-danger"   title="Elimina registro de la BD">Elimina BD</button>
-      
-    </form>
+      <button id="btnMostrarBD"        type="button" class="btn btn-secondary"   title="Mostrar registros de la BD" onclick="var ifr=document.getElementsByName('Registros')[0]; ifr.src=ifr.src;">Mostrar BD</button>
 
+      <br>
+      <br>
+      <div class="iframe">
+            <iframe name="Registros" src="php/loadRegistro.php" class="iframeResponsivo" frameborder="0"> </iframe>
+      </div>
+    </form>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 <html>

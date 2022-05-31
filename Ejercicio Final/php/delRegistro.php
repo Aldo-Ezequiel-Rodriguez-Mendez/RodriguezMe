@@ -1,5 +1,5 @@
 <?php
-include("conexionDB.php");
+include("conexion.php");
 
 try {
     $consultaSql = "delete from camiseta where idCamiseta=".$idCamiseta;

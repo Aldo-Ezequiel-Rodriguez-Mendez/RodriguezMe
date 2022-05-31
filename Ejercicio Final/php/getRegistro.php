@@ -1,5 +1,5 @@
 <?php
-include("conexionDB.php");
+include("conexion.php");
 
 try {
 $consultaSql = "select * from camiseta where idCamiseta=".$idCamiseta;
